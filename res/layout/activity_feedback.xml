@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/main_center_back" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relativeLayout1" android:background="@drawable/main_top_bac" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/imageView1" android:background="@drawable/fenkui_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/fankui_back" android:background="@drawable/back_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textStyle="bold" android:textColor="#ff804a0c" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="10.0dip" android:text="问题与建议（最多200个字）" android:layout_below="@id/relativeLayout1" android:layout_alignParentLeft="true" />
+    <RelativeLayout android:id="@id/relativeLayout2" android:background="@drawable/fankui_et" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/textView1" android:layout_centerHorizontal="true">
+        <EditText android:gravity="left" android:id="@id/feedback_et_fankui" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:maxLines="6" android:minLines="6" android:layout_centerHorizontal="true">
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+    <TextView android:textStyle="bold" android:textColor="#ff804a0c" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="7.0dip" android:text="联系方式（必填）" android:layout_below="@id/relativeLayout2" android:layout_alignParentLeft="true" />
+    <RelativeLayout android:id="@id/rl1" android:background="@drawable/fankui_lianxiren" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/textView2">
+        <EditText android:id="@id/feedback_et_lianxi" android:background="#ffffffff" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:hint="邮箱或手机" android:singleLine="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageButton android:id="@id/feedback_tijiao" android:background="@drawable/tijiao_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/rl1" android:layout_alignParentRight="true" />
+</RelativeLayout>

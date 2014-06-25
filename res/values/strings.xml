@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">风水大师</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="aboutus">"\u0009\u0009西安宝亿电子科技有限公司是一家从事于安卓应用与游戏的软件开发商，短短几年来在互联网领域和安卓应用都得到各界的好评并深得用户的的喜爱，公司在大家的支持下逐步壮大，我们坚信，宝亿的未来有您的参与会更灿烂。
+\u0009\u0009伴随着历史的变迁，风水伴随着我们走进了新的时期，风水大师搜集了家居风水知识和方法，适用于新房装修和家居改装，通过风水的调节，达到天人合一，和谐生活。
+\u0009\u0009希望广大用户为我们提出更好的建议与意见，有了您的支持今后我们将更加努力，我们愿为您创造一个更好的网络应用平台。
+
+
+\u0009联系我们：
+
+\u0009\u0009邮箱：android@xabaoyi.com
+\u0009\u0009QQ:1715859756
+\u0009\u0009电话：029-68969818"</string>
+    <string name="cannot_get_sensor">本手机没有传感器，罗盘无法正常工作！！！</string>
+    
+    <string name="ad_recomment">推荐</string>
+    <string name="ad_other">更多</string>
+    
+</resources>

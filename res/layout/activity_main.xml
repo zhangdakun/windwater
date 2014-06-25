@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/main_top" android:background="@drawable/main_top_bac" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/main_top_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TabHost android:id="@*android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/main_top" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TabWidget android:id="@*android:id/tabs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <FrameLayout android:id="@*android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/main_12">
+                <RelativeLayout android:id="@id/tab1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <RelativeLayout android:id="@id/tab2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <RelativeLayout android:id="@id/tab3" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+            <RelativeLayout android:id="@id/main_12" android:background="@drawable/main_bottom_back" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <RelativeLayout android:id="@id/main_1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/main_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/main_1">
+                    <RelativeLayout android:id="@id/main_bottom_fenlei" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:id="@id/main_iv_fenlei" android:background="@drawable/main_botton_back" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <ImageButton android:id="@id/main_ibtn_fenlei" android:background="@drawable/main_fenlei_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/main_bottom_fangwei" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:id="@id/main_iv_position" android:background="@drawable/main_botton_back" android:visibility="invisible" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <ImageButton android:id="@id/main_ibtn_position" android:background="@drawable/main_position_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:gravity="center_vertical" android:id="@id/main_bottom_maore" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:id="@id/main_iv_more" android:background="@drawable/main_botton_back" android:visibility="invisible" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <ImageButton android:id="@id/main_ibtn_more" android:background="@drawable/main_more_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </TabHost>
+</RelativeLayout>
